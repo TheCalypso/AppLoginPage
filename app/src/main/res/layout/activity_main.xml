@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/label_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login :"
+        android:textSize="16sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/editText_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/label_login"
+        android:layout_toStartOf="@id/imageButton_login_info"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignBaseline="@id/label_login"
+        android:layout_alignBottom="@id/label_login"
+        android:hint="login" />
+
+    <ImageButton
+        android:id="@+id/imageButton_login_info"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/information"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@id/editText_login"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/label_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mot de passe :"
+        android:textSize="16sp"
+        android:layout_below="@id/editText_login"
+        android:layout_alignStart="@id/label_login"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/label_password"
+        android:layout_toStartOf="@id/imageButton_password_info"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignBaseline="@id/label_password"
+        android:layout_alignBottom="@id/label_password"
+        android:hint="mot de passe"
+        android:inputType="textPassword" />
+
+    <ImageButton
+            android:id="@+id/imageButton_password_info"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/information"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_alignTop="@id/editText_password"
+            android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6200EE"
+        android:layout_below="@id/editText_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+</RelativeLayout>
